@@ -154,14 +154,17 @@
 
 
                          <!----------------------hidden:------------------------------------------------------------->
-                          <textarea class="form-control" id="highlight_array" >{{highlight_array}}</textarea>
-                          <textarea class="form-control" id="array_size" >{{mysize}}</textarea>
+                          <textarea class="form-control" id="highlight_array" hidden>{{highlight_array}}</textarea>
+                          <textarea class="form-control" id="array_size" hidden>{{mysize}}</textarea>
                           <!--<h5>hidden:</h5>-->
                           <textarea class="form-control" rows="10" name="results"  id="app_array" >{{df2}}</textarea> <!--hidden-->
+                          <textarea class="form-control" rows="10" name="results2"  id="after_removing_chars" ></textarea> <!--hidden-->
                           <!--<h5>result:</h5>-->
-                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text"  ></textarea>
+                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text" ></textarea>
 
-                          <textarea class="form-control" rows="10" name="workingex" id="workingex"  >id,username,Password,Name,Phone,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone
+
+
+                          <textarea class="form-control" rows="10" name="workingex" id="workingex" hidden >id,username,Password,Name,Phone,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone
                             ,ajma,,AJ Magot,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
                             ,MenardA,,AJ Menard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
                             ,1066038,,ANTONIO GUEVARA,9082963800,,,Driver Type:Independent Contractor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
@@ -270,19 +273,19 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                            <input name="nameF" type="text" id="name" placeholder="Full Name" required=""
                                                 style="background-color: rgba(250,250,250,0.3);">
                                         </fieldset>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                            <input name="emailF" type="text" id="email" placeholder="E-Mail Address"
                                                 required="" style="background-color: rgba(250,250,250,0.3);">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                            <textarea name="messageF" rows="6" id="message" placeholder="Your Message"
                                                 required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
                                         </fieldset>
                                     </div>
@@ -450,11 +453,25 @@
       {
       var type = typeof(app_array_value);
 
+      // replace ] with nothing.
+      app_array_value = app_array_value.replaceAll("']", "");
+
+      // replace [ with nothing.
+      app_array_value = app_array_value.replaceAll("['", "");
+
       //works, replaces all ' with " to make array
       app_array_value = app_array_value.replaceAll("\'", "\"");
-      //app_array_value = "\'" + app_array_value + "\'";
+
+      // replace  ', ' with nothing.
+      app_array_value = app_array_value.replaceAll("\', \'", "");
+
+      //finally adding [] around the object
+      app_array_value = "[\""+app_array_value+"\"]"
+
+      $("#after_removing_chars").val(app_array_value);
+
       var myJsonArray = JSON.parse(app_array_value);
-      var type2 = typeof(app_array_value);
+      //var type2 = typeof(app_array_value);
 
       document.getElementById('result_text').value =myJsonArray; // "TYPE OF: "+ type + "\n " +"TYPE OF 2: "+ type2 + "\n " + myJsonArray + "\n " + app_array_value
 
