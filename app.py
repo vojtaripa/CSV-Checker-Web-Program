@@ -62,23 +62,60 @@ def root():
         feedback_name = request.form.get('nameF')
         feedback_email = request.form.get('emailF')
         feedback_message = request.form.get('messageF')
+        
+        print('\n\n Feedback \n\n')
+        print('-'+str(feedback_name)+'-')
 
-        print(feedback_name)
+        
+        '''
+        if ((str(feedback_name) != "") and (str(feedback_name) != "None")):
+          print("Feedback- NOT blank")
+        else:
+          print("Feedback- blank")
+        '''
+
         
 
         #Gets the TEXTBOX variable from textarea then based on if there is text or not it will proceed slitly differently
         user_csv_userinput = request.form.get('user_csv')
         
-        '''
-        if feedback_name != "":
+        
+        if ((str(feedback_name) != "None")): #for some reason default value is none, not blank.. (str(feedback_name) != "")
           df_data_vojta = ""
-          feedback_name = feedback_name #do nothing right now.
-          return render_template('home.html', df2=feedback_name)
-        '''
+
+
+          #EMAIL STUFF
+          #////////////////////////////////////////////////////////////////////////////////////
+
+          body1 = feedback_message
+          #body = ('Input:\n\n', df_data,'- Output:\n\n', output)
+        
+          EmailAdd = "vojtaripa@gmail.com" #senders Gmail id over here
+          Pass = "rnlnndgxawzdrejh" #senders Gmail's Password over here 
+
+          msg = EmailMessage()
+          msg['Subject'] = ('FEEDBACK - CSV Checker Results - '+feedback_name) # Subject of Email
+          msg['From'] = EmailAdd
+          msg['To'] = ['vojtaripa@gmail.com', 'vojta.ripa@samsara.com',feedback_email] # Reciver of the Mail
+          msg.set_content(body1) # Email body or Content
+
+          #### >> Code from here will send the message << ####
+          try:
+              with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp: #Added Gmails SMTP Server
+                  smtp.login(EmailAdd,Pass) #This command Login SMTP Library using your GMAIL
+                  smtp.send_message(msg) #This Sends the message
+              print ('Email sent successfully!')
+
+          except:
+              print ('OH NO! Something went wrong...')
+
+          #Redirects page:   
+          return render_template('data.html', df2=feedback_name)
+        
         #//////////////////////////////////////////////////////////
         #executing FILE UPLOAD (Doesnt Quite work with some files)
         #//////////////////////////////////////////////////////////
-        if user_csv_userinput == "":
+        elif user_csv_userinput == "":
         
 
   # HERE IS WORKING CODE THAT WILL CREATE HTML TABLE / ARRAY:
@@ -141,6 +178,8 @@ def root():
         #IF uploading from textbox directly (WORKS)
         #//////////////////////////////////////////////////////////
         else:
+          df ={}
+          df2=pd.DataFrame(df)
           #user_csv_userinput = request.form.get('user_csv')
 
           #WORKING used to create table on HTML page:
@@ -553,7 +592,7 @@ def root():
         #////////////////////////////////////////////////////////////////////////////////////
         info1 = df_data.to_string()
         info2 = "\n".join(output)
-        body1 = 'File: '+str(file.name)+'Filepath\n' + str(tempfile_path) + '\n\nOG Data:\n\n'+str(df)+'\n\nInput:\n\n' + info1 + '\n\nOutput:\n\n'+ info2
+        body1 = 'File: '+str(file)+'Filepath\n' + str(tempfile_path) + '\n\nOG Data:\n\n'+str(df)+'\n\nInput:\n\n' + info1 + '\n\nOutput:\n\n'+ info2
         #body = ('Input:\n\n', df_data,'- Output:\n\n', output)
         
         EmailAdd = "vojtaripa@gmail.com" #senders Gmail id over here
@@ -577,7 +616,7 @@ def root():
 
 
         #now sending all data / results to home.html page:
-        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight)
+        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight, mydf=df2.to_html())
 
 
 """

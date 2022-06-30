@@ -157,10 +157,10 @@
                           <textarea class="form-control" id="highlight_array" hidden>{{highlight_array}}</textarea>
                           <textarea class="form-control" id="array_size" hidden>{{mysize}}</textarea>
                           <!--<h5>hidden:</h5>-->
-                          <textarea class="form-control" rows="10" name="results"  id="app_array" >{{df2}}</textarea> <!--hidden-->
-                          <textarea class="form-control" rows="10" name="results2"  id="after_removing_chars" ></textarea> <!--hidden-->
+                          <textarea class="form-control" rows="10" name="results"  id="app_array" hidden>{{df2}}</textarea> <!--hidden-->
+                          <textarea class="form-control" rows="10" name="results2"  id="after_removing_chars" hidden></textarea> <!--hidden-->
                           <!--<h5>result:</h5>-->
-                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text" ></textarea>
+                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text" hidden></textarea>
 
 
 
@@ -225,8 +225,12 @@
                         <p>Your CSV data in a table format</p>
                         <!-- OUTPUT / TABLE-->
                         <div class="mt-4" style="width: 100%; overflow: scroll; overflow-y: scroll; overflow-x: scroll; height: 400px; background-color: #fba70b; ">
-                            {% if request.method == 'POST'%}
-                            <table id="proxies" class="display table nowrap responsive" >
+                          {{ mydf | safe }}
+                          <!--new table-->
+                          
+                          <!--
+                          {% if request.method == 'POST'%}
+                            <table id="proxies" class="display table nowrap responsive" hidden>
                                 <thead>
                                 <tr>
                                     {% for header in results[0].keys() %}
@@ -245,7 +249,12 @@
                                 </tbody>
                             </table>
                             {% endif %}
+
+                            -->
                         </div>
+
+                        
+                        
 
                     </div>
                 </div>
