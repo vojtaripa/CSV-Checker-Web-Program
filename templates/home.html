@@ -97,14 +97,16 @@
                     <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1>Samsara <em>CSV File</em> Checker</h1>
-                        <p>1. Please paste the content of your CSV file in textbox on the right <b>-or-</b> upload you CSV file directly by clicking the button "Choose File" and selecting your CSV file from your computer.<br> 2. Then click the <b>Render CSV</b> button</p>
+                        <p>1. Please upload you CSV file directly by clicking the button "Choose File" and selecting your CSV file from your computer.<br> 2. Then click the <b>Render CSV</b> button</p>
+                        <!-- paste the content of your CSV file in textbox on the right <b>-or-</b>  -->
                         <button class="btn btn-success mt-2 main-button-slider" id="button" >Render CSV</button>
+                        <input class="btn btn-info mt-2 main-button-slider" type="file" id="upload" name="input_file" />
                         <br><br>
                         <div class="container">
                         <div class="row">
                           <div class="main-button-slider" id="working">Working Example</div>
                           <div class="main-button-slider" id="non-working">Non-Working Example</div>
-                          <div class="main-button-slider" id="clear">Clear</div>
+                          <div class="main-button-slider" id="clear" style="display: none">Clear</div>
                         </div></div>
 
                     </div>
@@ -113,14 +115,14 @@
                     <div class="right-text col-lg-6 col-md-12 col-sm-12 col-xs-12" style="top: 300px;"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <textarea  class="form-control" rows="14" name="user_csv" id="user_csv" style=" border-style: solid;
-                        border-width: 5px; border-color: #fba70b; opacity: 0.95;"  placeholder="                       >>>  paste CSV file text here  <<<">{{user_csv_b4}}</textarea>
+                        border-width: 5px; border-color: #fba70b; opacity: 0.95; display: none;"  placeholder="                       >>>  paste CSV file text here  <<<">{{user_csv_b4}}</textarea>
                      
                      
-                        <h2 style="text-shadow: 2px 2px 1px #000000; color:#f1556a">- OR -</h2>
+                        <h2 style="text-shadow: 2px 2px 1px #000000; color:#f1556a; display: none;">- OR -</h2>
                         
                         <div style=" border-style: solid;
-                        border-width: 5px; border-color: #fba70b; opacity: 0.95; background-color: white;">
-                            <input type="file" id="upload" name="input_file" />
+                        border-width: 5px; border-color: #fba70b; opacity: 0.95; background-color: white; display: none;">
+                            
                       </div>
 
 
@@ -144,7 +146,7 @@
               data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s" >
               <div class="features-item" style="background-color:rgba(230, 224, 224, 0.418); ">
                   <div class="features-icon" >
-                      <h2 style="text-shadow: 2px 2px 1px #000000; color:#f1556a">01</h2>
+                      <h2 style="text-shadow: 2px 2px 1px #000000; color:#f1556a" id="show">01</h2>
 
                       <h4>Results</h4>
                       <p id="myresultsoutput">Here are the errors found in the CSV file you provided</p>
@@ -154,17 +156,26 @@
 
 
                          <!----------------------hidden:------------------------------------------------------------->
-                          <textarea class="form-control" id="highlight_array" hidden>{{highlight_array}}</textarea>
-                          <textarea class="form-control" id="array_size" hidden>{{mysize}}</textarea>
-                          <!--<h5>hidden:</h5>-->
-                          <textarea class="form-control" rows="10" name="results"  id="app_array" hidden>{{df2}}</textarea> <!--hidden-->
-                          <textarea class="form-control" rows="10" name="results2"  id="after_removing_chars" hidden></textarea> <!--hidden-->
+                          <p style="display: none">HighLight Array: highlight_array</p>
+                          <textarea class="form-control" id="highlight_array" style="display: none">{{highlight_array}}</textarea>
+                          
+                          <p style="display: none">Array Size: mysize</p>
+                          <textarea class="form-control" id="array_size" style="display: none">{{mysize}}</textarea>
+                          <!--<h5>style="display: none":</h5>-->
+                          
+                          <p style="display: none">App Array: df2 (variable)</p>
+                          <textarea class="form-control" rows="10" name="results"  id="app_array" style="display: none">{{df2}}</textarea> <!--style="display: none"-->
+                          
+                          <p style="display: none">Results 2: after_removing_chars</p>
+                          <textarea class="form-control" rows="10" name="results2"  id="after_removing_chars" style="display: none"></textarea> <!--style="display: none"-->
                           <!--<h5>result:</h5>-->
-                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text" hidden></textarea>
+                          
+                          <p style="display: none">Results: result_text</p>
+                          <textarea class="form-control" rows="10" name="my results after Javascript" id="result_text" style="display: none"></textarea>
 
 
-
-                          <textarea class="form-control" rows="10" name="workingex" id="workingex" hidden >id,username,Password,Name,Phone,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone
+                          <p style="display: none">Working Example:</p>
+                          <textarea class="form-control" rows="10" name="workingex" id="workingex" style="display: none" >id,username,Password,Name,Phone,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone
                             ,ajma,,AJ Magot,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
                             ,MenardA,,AJ Menard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
                             ,1066038,,ANTONIO GUEVARA,9082963800,,,Driver Type:Independent Contractor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
@@ -206,6 +217,8 @@
                       </table>
                       </div>
 
+                      <div class="btn btn-success mt-2 main-button-slider" id="start_over">Start Over</div>
+
                   </div>
               </div>
           </div>
@@ -224,7 +237,7 @@
                         <h4>Table</h4>
                         <p>Your CSV data in a table format</p>
                         <!-- OUTPUT / TABLE-->
-                        <div class="mt-4" style="width: 100%; overflow: scroll; overflow-y: scroll; overflow-x: scroll; height: 400px; background-color: #fba70b; ">
+                        <div class="mt-4" style=" overflow-y: auto; overflow-x: auto; height: 400px; background-color: #fba70b;  width: 5000px; ">
                           {{ mydf | safe }}
                           <!--new table-->
                           
@@ -381,9 +394,20 @@
     var working_example   = document.getElementById('workingex').value;
 
     //3 BUTTONS:
-     $('#working').click( function () {is_there_text=true; $('#user_csv').val(working_example)});
+    my_upload = document.getElementById('upload')
+
+     $('#working').click( function () {is_there_text=true; Object.defineProperty(my_upload, 'name', {
+  writable: true,
+  value: "C:\fakepath\FINAL_working_example.csv"
+  
+
+});
+Object.defineProperty(my_upload, 'name', {
+  writable: true,
+  filename: "C:\fakepath\FINAL_working_example.csv"});
+alert("working example"); });  //$('#user_csv').val(working_example)
        //previous: Id,Username,Password,Name,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone,,Driver Ruleset Cycle,Driver Ruleset US State to Override,Driver Ruleset Restart,Driver Ruleset Restbreak,Peer Group Tag,Vehicle Selection Tag,Trailer Selection Tag,ID Card Code,Tachograph Card,Driver Status,Tags,Attributes,US Short Haul Exemption,Driver ID Token\n,ajma,,AJ Magot,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT,,USA Property (7/60)\n,MenardA,,AJ Menard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,1066038,,ANTONIO GUEVARA,9082963800,,,Driver Type:Independent Contractor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,SandboxA,,ATL Sandbox Driver,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,MillsA,,Aaron Mills,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,AaronA,,Adam Aaron,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,BaileyA,,Adam Bailey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,adamn,,Adam Navaro,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,addisonm,,Addison Midoro,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,adrianr,,Adrian Rojas,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,AgustenENieves,,Agusten E Nieves,6192774895,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,DillardA,,Alan Dillard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
-     $('#non-working').click( function () {is_there_text=true; $('#user_csv').val("Id,Username,Password,Name,qwerty,Notes,Tags,Attributes,Peer Group,Vehicle Selection Tag,Start of Day Workflow,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone,,Driver Ruleset Cycle,Driver Ruleset US State to Override,Driver Ruleset Restart,Driver Ruleset Restbreak,Peer Group Tag,Vehicle Selection Tag,Trailer Selection Tag,ID Card Code,Start of Day Workflow,End of Day Workflow,Tachograph Card,Driver Status,Tags,Attributes,US Short Haul Exemption,Driver ID Token\n2,SnowR,123,SnowR,,,,,,,,,,,,,,,,,,,,,,,,,,,,dsafdsf,,,,,,,,,,,,,,,\n,steve,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n,nam,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n3,carl,12312,Eric Hooper,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");});
+     $('#non-working').click( function () {is_there_text=true; $('#upload').filename("FINAL_non_working_example.csv"); alert("non - working example");});  //$('#user_csv').val("Id,Username,Password,Name,qwerty,Notes,Tags,Attributes,Peer Group,Vehicle Selection Tag,Start of Day Workflow,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone,,Driver Ruleset Cycle,Driver Ruleset US State to Override,Driver Ruleset Restart,Driver Ruleset Restbreak,Peer Group Tag,Vehicle Selection Tag,Trailer Selection Tag,ID Card Code,Start of Day Workflow,End of Day Workflow,Tachograph Card,Driver Status,Tags,Attributes,US Short Haul Exemption,Driver ID Token\n2,SnowR,123,SnowR,,,,,,,,,,,,,,,,,,,,,,,,,,,,dsafdsf,,,,,,,,,,,,,,,\n,steve,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n,nam,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n3,carl,12312,Eric Hooper,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
      $('#clear').click(
 
      function(){
@@ -423,13 +447,23 @@
 //Function to change state UPLOAD:
   $("#upload").on('input', function()
   {
+    
+    var ext = $('#upload').val().split('.').pop().toLowerCase();
+    
+    
     if ($("#upload").val === "")
     {
       $("#button").prop('disabled', true); //button remains disabled
       is_there_text=false;
     }
+    else if($.inArray(ext, ['csv']) == -1)
+    {
+      alert('invalid file type! Please upload a CSV file only.');
+      $("#button").prop('disabled', true); //button remains disabled
+    }
     else
     {
+      
       $("#button").prop('disabled', false);//button is enabled
     }
   });
@@ -581,8 +615,48 @@
     $('#button').click( function() {$(this).attr("href", "#results"); $("#results").scrollIntoView(); }).click(PrintArrayFromAppPY());
     document.getElementById( 'results' ).scrollIntoView();
 
+    setTimeout(function() {
+    document.addEventListener("DOMContentLoaded", function(event) 
+    { 
+      var never_run = document.getElementById( 'app_array' ).textContent;
 
+      if(never_run == "")
+      {
+        $(window).scrollTop(0);
+        document.getElementById( 'welcome' ).scrollIntoView();
+        //alert("YES");
+      }
+      else
+      {
+        //alert("NO");
+      }
+});
+}, 2000);
 
+//SHOW ALL HIDDEN ELEMENTS: (FOR DEBUGGING)
+$("#show").on("click",function(){
+  $("*").show();
+  alert("Debug mode");
+});
+
+//START OVER BUTTON
+$('#start_over').click(function() {
+    location.reload();
+    document.getElementById( 'welcome' ).scrollIntoView();
+    $(window).scrollTop(0);
+});
+
+// LIMITTING ONLY CSV file upload
+$("#button").bind("submit", function() {   
+    
+  var ext = $('#upload').val().split('.').pop().toLowerCase();
+    
+    if($.inArray(ext, ['csv']) == -1) 
+    {
+        alert('invalid file type! Please upload a CSV file only.');
+    }
+
+  });
   </script>
 
 </html>

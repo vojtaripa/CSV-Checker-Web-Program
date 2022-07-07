@@ -26,6 +26,7 @@ def root():
         results = []
         results2 = []
         output = []
+        output_email = []
         highlight = []
 
         tempfile_path = "none"
@@ -155,15 +156,17 @@ def root():
           
 
           # Put input file in dataframe
-          df = pd.read_csv(tempfile_path) #, encoding='cp1252'
+          df = pd.read_csv(tempfile_path) #, na_filter=False) #, encoding='cp1252'
+          df_no_Nan = pd.read_csv(tempfile_path, na_filter=False) #, encoding='cp1252'
 
           df2 = df.rename(str.lower, axis='columns')
+          df2_no_Nan = df_no_Nan.rename(str.lower, axis='columns')
 
           df_data_vojta = pd.DataFrame(df2)
 
           
           #NOW TO MAKE TABLE ON NEXT PAGE:
-          table_data = df2 #sheet
+          table_data = df2_no_Nan #sheet
           reader = csv.DictReader(table_data)
 
           for row in reader:
@@ -180,6 +183,7 @@ def root():
         else:
           df ={}
           df2=pd.DataFrame(df)
+          df2_no_Nan = {}
           #user_csv_userinput = request.form.get('user_csv')
 
           #WORKING used to create table on HTML page:
@@ -592,17 +596,455 @@ def root():
         #////////////////////////////////////////////////////////////////////////////////////
         info1 = df_data.to_string()
         info2 = "\n".join(output)
-        body1 = 'File: '+str(file)+'Filepath\n' + str(tempfile_path) + '\n\nOG Data:\n\n'+str(df)+'\n\nInput:\n\n' + info1 + '\n\nOutput:\n\n'+ info2
+        info3 = "<br>".join(output)
+        myfile= str(file)
+        body1 = 'File: '+myfile+'Filepath\n' + str(tempfile_path) + '\n\nOG Data:\n\n'+str(df)+ '\n\nTable:\n\n'+str(df2.to_html())+'\n\nInput:\n\n' + info1 + '\n\nOutput:\n\n'+ info2
         #body = ('Input:\n\n', df_data,'- Output:\n\n', output)
         
         EmailAdd = "vojtaripa@gmail.com" #senders Gmail id over here
         Pass = "rnlnndgxawzdrejh" #senders Gmail's Password over here 
 
         msg = EmailMessage()
-        msg['Subject'] = ('CSV Checker Results - '+str(file)) # Subject of Email
+        msg['Subject'] = ('CSV Checker Results - '+myfile) # Subject of Email
         msg['From'] = EmailAdd
         msg['To'] = ['vojtaripa@gmail.com', 'vojta.ripa@samsara.com'] # Reciver of the Mail
         msg.set_content(body1) # Email body or Content
+
+        msg.add_alternative("""\
+        <!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Simple Transactional Email</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; 
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        /*max-width: 580px;*/
+        padding: 3px;
+		overflow-x: auto;
+        width: 1000px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        /*max-width: 580px;*/
+        padding: 5px; 
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 5px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; 
+      }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; 
+      }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table.body h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table.body p,
+        table.body ul,
+        table.body ol,
+        table.body td,
+        table.body span,
+        table.body a {
+          font-size: 16px !important; 
+        }
+        table.body .wrapper,
+        table.body .article {
+          padding: 10px !important; 
+        }
+        table.body .content {
+          padding: 0 !important; 
+        }
+        table.body .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table.body .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table.body .btn table {
+          width: 100% !important; 
+        }
+        table.body .btn a {
+          width: 100% !important; 
+        }
+        table.body .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body>
+    <span class="preheader">CSV Checker</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+		  
+		  <h1>CSV Checker</h1>
+		  <h2>Results</h2>
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <p>Here are the results from CSV Checker.</p>
+                        
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="http://vojtaripa.pythonanywhere.com/" target="_blank">Go To CSV Checker</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+						
+						<h3>File:</h3>
+                        <p>"""+myfile+"""</p>
+						<br>
+						
+						<h3>File Path:</h3>
+                        <p>"""+str(tempfile_path)+"""</p>
+						<br>
+						
+						<h3>OG Data:</h3>
+                        <p>"""+str(df)+"""</p>
+						<br>
+						
+						<h3>Table:</h3>
+                        <p>"""+str(df2_no_Nan.to_html())+"""</p>
+						<br>
+						
+						<h3>Input:</h3>
+                        <p>"""+info1+"""</p>
+						<br>
+						
+						<h3>Output:</h3>
+                        <p>"""+info3+"""</p>
+						<br>
+                        
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">CSV Checker Results - 2022</span>
+                    <br> Don't like these emails? email vojtaripa@gmail.com.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block powered-by">
+                    Created by <a href="http://vojtaripa.pythonanywhere.com/">Vojta Ripa & Scott Roan</a>.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+          """, subtype='html')
 
         #### >> Code from here will send the message << ####
         try:
@@ -616,7 +1058,7 @@ def root():
 
 
         #now sending all data / results to home.html page:
-        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight, mydf=df2.to_html())
+        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight, mydf=df2_no_Nan.to_html())
 
 
 """
