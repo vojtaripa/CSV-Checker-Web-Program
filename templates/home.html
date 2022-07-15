@@ -97,14 +97,51 @@
                     <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1>Samsara <em>CSV File</em> Checker</h1>
-                        <p>1. Please upload you CSV file directly by clicking the button "Choose File" and selecting your CSV file from your computer.<br> 2. Then click the <b>Render CSV</b> button</p>
+                       
+                       <div style="border:5px solid;
+                       border-color: #fba70b; " >
+                        <div type="button" class="collapsibleX">Click for directions</div>
+                        <div class="contentX">
+                          <p>1. Please upload you CSV file directly by clicking the button "Choose File" and selecting your CSV file from your computer.<br> 2. Then click the <b>Render CSV</b> button</p>
+                        </div>
+<h2><u>CSV file type (purpose)</u></h2>
+                        <input type="radio" id="drivers" name="csv_type" value="Drivers" checked>
+                        <label for="drivers">Drivers</label><br>
+                          
+                        <input type="radio" id="users" name="csv_type" value="Users" disabled>
+                        <label for="users">Users</label><br>
+                          
+                        <input type="radio" id="routes" name="csv_type" value="Routes" disabled>
+                        <label for="routes">Routes</label><br>
+                          
+                        <input type="radio" id="assets" name="csv_type" value="Assets" disabled>
+                        <label for="assets">Assets</label><br>
+                          
+                        <input type="radio" id="fuel" name="csv_type" value="Fuel" disabled>
+                        <label for="fuel">Fuel</label><br>
+
+                        <input type="radio" id="tags_and_attributes" name="csv_type" value="tags_and_attributes" disabled>
+                        <label for="tags_and_attributes">tags and attributes</label><br>
+                          
+                        <input type="radio" id="Addresses_Geofences" name="csv_type" value="Addresses_Geofences" disabled>
+                        <label for="Addresses_Geofences">Addresses/Geofences</label><br>
+
                         <!-- paste the content of your CSV file in textbox on the right <b>-or-</b>  -->
+                        <h2><u>Choose file:</u></h2>                    
+                        <input class="btn btn-info mt-2 main-button-slider" type="file" id="upload" name="input_file" value="test"/>
+                        <br>
                         <button class="btn btn-success mt-2 main-button-slider" id="button" >Render CSV</button>
-                        <input class="btn btn-info mt-2 main-button-slider" type="file" id="upload" name="input_file" />
                         <br><br>
+                      </div>
+                      <br>
+
                         <div class="container">
                         <div class="row">
+
+                          <input class="btn btn-info mt-2 main-button-slider" id="upload_working" name="upload_working" style="display: none;"/>
+                         
                           <div class="main-button-slider" id="working">Working Example</div>
+                          <br>
                           <div class="main-button-slider" id="non-working">Non-Working Example</div>
                           <div class="main-button-slider" id="clear" style="display: none">Clear</div>
                         </div></div>
@@ -163,6 +200,9 @@
                           <textarea class="form-control" id="array_size" style="display: none">{{mysize}}</textarea>
                           <!--<h5>style="display: none":</h5>-->
                           
+                          <p style="display: none">Error: myerror (variable)</p>
+                          <textarea class="form-control" rows="10" name="error"  id="error" style="display: none">{{error}}</textarea>
+
                           <p style="display: none">App Array: df2 (variable)</p>
                           <textarea class="form-control" rows="10" name="results"  id="app_array" style="display: none">{{df2}}</textarea> <!--style="display: none"-->
                           
@@ -241,29 +281,7 @@
                           {{ mydf | safe }}
                           <!--new table-->
                           
-                          <!--
-                          {% if request.method == 'POST'%}
-                            <table id="proxies" class="display table nowrap responsive" hidden>
-                                <thead>
-                                <tr>
-                                    {% for header in results[0].keys() %}
-                                    <th>{{header}}</th>
-                                    {% endfor %}
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {% for row in results %}
-                                    <tr>
-                                    {% for index in range(0, len(fieldnames)) %}
-                                        <td>{{row[fieldnames[index]]}}</td>
-                                    {% endfor %}
-                                    </tr>
-                                {% endfor %}
-                                </tbody>
-                            </table>
-                            {% endif %}
 
-                            -->
                         </div>
 
                         
@@ -389,6 +407,12 @@
  //Makes datatable in step 2
     $('#proxies').DataTable();
 
+    //errors:
+    var my_errors = document.getElementById('error').value;
+    if(my_errors != "")
+      alert("ERROR: "+my_errors);
+
+
     var is_there_text=false;
 
     var working_example   = document.getElementById('workingex').value;
@@ -396,7 +420,12 @@
     //3 BUTTONS:
     my_upload = document.getElementById('upload')
 
-     $('#working').click( function () {is_there_text=true; Object.defineProperty(my_upload, 'name', {
+     $('#working').click( function () {is_there_text=true; 
+
+      $("#upload_working").val("working");
+      //$("upload_working").val("non-working");
+
+      /*Object.defineProperty(my_upload, 'name', {
   writable: true,
   value: "C:\fakepath\FINAL_working_example.csv"
   
@@ -404,15 +433,46 @@
 });
 Object.defineProperty(my_upload, 'name', {
   writable: true,
-  filename: "C:\fakepath\FINAL_working_example.csv"});
-alert("working example"); });  //$('#user_csv').val(working_example)
-       //previous: Id,Username,Password,Name,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone,,Driver Ruleset Cycle,Driver Ruleset US State to Override,Driver Ruleset Restart,Driver Ruleset Restbreak,Peer Group Tag,Vehicle Selection Tag,Trailer Selection Tag,ID Card Code,Tachograph Card,Driver Status,Tags,Attributes,US Short Haul Exemption,Driver ID Token\n,ajma,,AJ Magot,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT,,USA Property (7/60)\n,MenardA,,AJ Menard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,1066038,,ANTONIO GUEVARA,9082963800,,,Driver Type:Independent Contractor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,SandboxA,,ATL Sandbox Driver,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,MillsA,,Aaron Mills,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,AaronA,,Adam Aaron,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,BaileyA,,Adam Bailey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT\n,adamn,,Adam Navaro,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,addisonm,,Addison Midoro,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,adrianr,,Adrian Rojas,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,AgustenENieves,,Agusten E Nieves,6192774895,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT\n,DillardA,,Alan Dillard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
-     $('#non-working').click( function () {is_there_text=true; $('#upload').filename("FINAL_non_working_example.csv"); alert("non - working example");});  //$('#user_csv').val("Id,Username,Password,Name,qwerty,Notes,Tags,Attributes,Peer Group,Vehicle Selection Tag,Start of Day Workflow,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone,,Driver Ruleset Cycle,Driver Ruleset US State to Override,Driver Ruleset Restart,Driver Ruleset Restbreak,Peer Group Tag,Vehicle Selection Tag,Trailer Selection Tag,ID Card Code,Start of Day Workflow,End of Day Workflow,Tachograph Card,Driver Status,Tags,Attributes,US Short Haul Exemption,Driver ID Token\n2,SnowR,123,SnowR,,,,,,,,,,,,,,,,,,,,,,,,,,,,dsafdsf,,,,,,,,,,,,,,,\n,steve,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n,nam,,Steve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n3,carl,12312,Eric Hooper,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
+  filename: "C:\fakepath\FINAL_working_example.csv"});*/
+//alert("working example"); 
+//$("#button").click();
+setTimeout(
+  function() 
+  {
+      $("#button").trigger("click");
+      is_there_text=false;
+      $("#button").prop('disabled', true);
+      $("#non-upload_working").prop('disabled', true);
+  }, 500);
+
+});  
+
+//NON WORKING EXAMPLE:
+$('#non-working').click( function () 
+{
+  is_there_text=true; 
+      $("#upload_working").val("non-working");
+
+//alert("non-working example"); 
+//$("#button").click();
+setTimeout(
+  function() 
+  {
+      $("#button").trigger("click");
+      is_there_text=false; 
+      $("#button").prop('disabled', true);
+      $("#upload_working").prop('disabled', true);
+
+  }, 500);
+
+});
+    
      $('#clear').click(
 
      function(){
         $('#user_csv').val('');
         is_there_text=false;
+
     });
 
     //DISABLE BUTTON:
@@ -491,7 +551,7 @@ alert("working example"); });  //$('#user_csv').val(working_example)
       var app_array_value = document.getElementById('app_array').value;
       var highlight_array = document.getElementById('highlight_array').value;
 
-
+      //IF COMING BACK FROM EXECUTING PYTHON SCRIPT:
       if(app_array_value != "")
       {
       var type = typeof(app_array_value);
@@ -612,10 +672,21 @@ alert("working example"); });  //$('#user_csv').val(working_example)
     }
 
     //Converts array of results to more printable format WORKS!
-    $('#button').click( function() {$(this).attr("href", "#results"); $("#results").scrollIntoView(); }).click(PrintArrayFromAppPY());
-    document.getElementById( 'results' ).scrollIntoView();
+    $('#button').click(
+      
+      
 
-    setTimeout(function() {
+      PrintArrayFromAppPY()
+
+
+
+
+);  // .click( function() {$(this).attr("href", "#results"); $("#results").scrollTop(0); })
+
+    var myscroll = document.getElementById( 'results' );
+    
+
+    
     document.addEventListener("DOMContentLoaded", function(event) 
     { 
       var never_run = document.getElementById( 'app_array' ).textContent;
@@ -623,15 +694,22 @@ alert("working example"); });  //$('#user_csv').val(working_example)
       if(never_run == "")
       {
         $(window).scrollTop(0);
-        document.getElementById( 'welcome' ).scrollIntoView();
+        document.getElementById( 'welcome' );
         //alert("YES");
       }
+      //already has results
       else
       {
         //alert("NO");
+        $('html, body').animate({
+          scrollTop: $("#results").offset().top
+      }, 500);
+
+
+
       }
 });
-}, 2000);
+
 
 //SHOW ALL HIDDEN ELEMENTS: (FOR DEBUGGING)
 $("#show").on("click",function(){
@@ -642,7 +720,7 @@ $("#show").on("click",function(){
 //START OVER BUTTON
 $('#start_over').click(function() {
     location.reload();
-    document.getElementById( 'welcome' ).scrollIntoView();
+    document.getElementById( 'welcome' );
     $(window).scrollTop(0);
 });
 
@@ -657,6 +735,24 @@ $("#button").bind("submit", function() {
     }
 
   });
+
+
+//DIRECTIONS COLLAPSABLE:
+var coll = document.getElementsByClassName("collapsibleX");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeX");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
   </script>
 
 </html>

@@ -1,0 +1,625 @@
+id,username,Password,Name,Phone,Notes,Tags,Attributes,Vehicle Selection Tag,Trailer Selection Tag,License Number,License State,ELD Exempt,ELD Exempt Reason,Adverse Driving Exemption,Defer Off-Duty Exemption,Adverse Driving (Canada) Exemption,ELD Personal Conveyance (PC),ELD Yard Moves (YM),Waiting Time (WT),ELD Day Start Hour,Carrier Name Override,Main Office Address Override,Carrier US DOT Number Override,Home Terminal Name,Home Terminal Address,Driver ID,Home Terminal Timezone
+,ajma,,AJ Magot,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MenardA,,AJ Menard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,1066038,,ANTONIO GUEVARA,9082963800,,,Driver Type:Independent Contractor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SandboxA,,AT&L Sandbox Driver,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MillsA,,Aaron Mills,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,AaronA,,Adam Aaron,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BaileyA,,Adam Bailey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,adam.goldberg,,Adam Goldberg,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,Wheel Pros 1020,"8550 Seward Rd, Suite 250, Fairfield, OH",,New York - EST/EDT
+,adamn,,Adam Navaro,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,addisonm,,Addison Midoro,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,adrianr,,Adrian Rojas,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,AgustenENieves,,Agusten E Nieves,6192774895,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DillardA,,Alan Dillard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HallowayA,,Alan Halloway,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BredenA,,Alec Breden,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,alexb,,Alex Barragan,,,,,,,,,FALSE,Exempt,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,PadillaA,,Alex Padilla,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TurtonA,,Alex Turton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilkinA,,Alex Wilkin,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,allena,,Allen Algarin,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,WellsA,,Alphonso Wells,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,andream,,Andrea Morales,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,andrewa,,Andrew Albanese,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FultonA,,Andrew Fulton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MyersA,,Andrew Myers,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PaulA,,Andrew Paul,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PhillipsA,,Andrew Phillips,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ReevesA,,Andrew Reeves,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StraubA,,Andrew Straub,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,andrewt,,Andrew Thornton,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,TilleyA,,Andrew Tilley,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,VuAndy,,Andy Vu,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RiveraA,,Angel Rivera,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MoretonA,,Anthony Moreton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PaganoA,,Anthony Pagano,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PalmireA,,Anthony Palmire,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ByrdA,,Antonio Byrd,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MuckenfussA,,Archie Muckenfuss,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PeraltaA,,Armando Peralta,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WalkerA,,Arsenio Walker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ashleyr,,Ashley Ruby,6168369418,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SyrjalaB,,Ben Syrjala,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JudyB,,Benjamin Judy,7045345712,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,CORP,,,New York - EST/EDT
+,benjaminw,,Benjamin Wilkinson,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HiraB,,Beraj Hira,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BerryhillB,,Bill Berryhill,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BrownB,,Bill Brown,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,EvansB,,Bill Evans,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BakerB,,Billy Baker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohnsonB,,Billy Johnson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WalkerB,,Billy Walker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,blaked,,Blake Dean,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,LeachB,,Bobby Leach,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LindseyB,,Boyd Lindsey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GilmoreB,,Brad Gilmore,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BridgesB,,Bradley Bridges,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NoahB,,Bradley Noah,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BlockingerB,,Brandin Blockinger,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CarterB,,Brandon Carter,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,brandone,,Brandon Epps,7349458027,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HeatonB,,Brandon Heaton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LeeB,,Brandon Lee,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SharpeB,,Brandon Sharpe,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StappB,,Brandon Stapp,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StovallB,,Brandon Stovall,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilsonB,,Brandon Wilson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,brendans,,Brendan Stapp,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BurchfieldB,,Brent Burchfield,,,,,,,,,FALSE,"UNDER 10,000 GVWR",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WoosterB,,Brent Wooster,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,InskeepB,,Brett Inskeep,,,,,,,,,FALSE,"Under 10,000 GVWR",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,Spatco,"7621 Ball Rd. Fort Smith, Ar. 72908",,New York - EST/EDT
+,brianl,,Brian Leggett,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,brianr,,Brian Rusk,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,TisdaleB,,Brian Tisdale,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TrotterB,,Brian Trotter,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,brockr,,Brock Rance,2694478641,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BrownB2,,Bruce Brown,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,brucel,,Bruce Lord,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BedgoodB,,Bryan Bedgood,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BradfordB,,Byron Bradford,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavilaC,,CJ Davila,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HydeC,,Cameron Hyde,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BrewerC,,Carl Brewer,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CorkeC,,Carl Corke,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RobinsonC,,Carl Robinson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,carlosf,,Carlos Ferrufino,8322744227,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MaplesC,,Carson Maples,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MundayC,,Casey Munday,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,AaronC,,Chandler Aaron,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BrockC,,Chandler Brock,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PiggC,,Chandler Pigg,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KirchnerC,,Chanse Kirchner,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SterlingC,,Chase Sterling,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DunhamC,,Chris Dunham,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HarrisC,,Chris Harris,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MeggsC,,Chris Meggs,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PhillipsC,,Chris Phillips,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RichardsonC,,Chris Richardson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RiveraC,,Chris Rivera,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TornowC,,Chris Tornow,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,UptonC,,Chris Upton,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilliamsC,,Chris Williams,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BullardC,,Christian Bullard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,christopherb,,Christopher Byrd,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SweeneyC,,Christopher Sweeney,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,christophert,,Christopher Turner,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,WoodC,,Chuck Wood,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HendrixC,,Clint Hendrix,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CrittendonC,,Codie Crittendon,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RomanC,,Cody Roman,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StokerC,,Cody Stoker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DaileyC,,Colby Dailey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MastinC,,Conner Mastin,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,connorr,,Connor Ryan,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CulpC,,Corey Culp,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavisC,,Corey Davis,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,McLaughlinC,,Corey McLaughlin,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TrivettC,,Curtis Trivett,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CalvertD,,Dalton Calvert,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HymanD,,Dalton Hyman,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BarfieldD,,Daniel Barfield,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BradleyD,,Daniel Bradley,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FlahertyD,,Daniel Flaherty,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,danielg,,Daniel Garcia,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HoneaD,,Daniel Honea,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,danielm,,Daniel Hyde,7345366555,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,"29300 Lyon Pines Dr, New Hudson, MI 48165",,Los Angeles - PST/PDT
+,JohnstonD,,Daniel Johnston,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MusgroveD,,Daniel Musgrove,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OliverD,,Daniel Oliver,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,danielr,,Daniel Rios,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ThomasD,,Daniel Thomas,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilmothD,,Daniel Wilmoth,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,dannyp,,Danny Phetsinor,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,VasquezD,,Danny Vasquez,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LeaD,,Darrell Lea,,,,,,,,,FALSE,service,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,New York - EST/EDT
+,CollinsD,,Daryl Collins,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LyonsD,,David Lyons,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MedfordD,,David Medford,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MontijoD,,David Montijo,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PrinceD,,David Prince,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PylesD,,David Pyles,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WrightD,,David Wright,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PritchardD,,Dennis Pritchard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RobertsonD,,Dennis Robertson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,YamberD,,Derek Yamber,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BarrettD,,Derin Barrett,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,derricks,,Derrick Samountry,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,devinf,,Devin Ferreira,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,JeffersD,,Devin Jeffers,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,Devink,,Devin Kilger,9518700073,Test Login,,,,,,,FALSE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GeusD,,Devon Geus,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,QuickD,,Dewey Quick,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SheffieldD,,Dillan Sheffield,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ArringtonD,,Dillon Arrington,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithD,,Dillon Smith,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WatsonD,,Dillon Watson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JanuszD,,Don Janusz,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,dons,,Don Stewart,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FyallD,,Donell Fyall,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PollardD,,Donnie Pollard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OutlawD,,Doug Outlaw,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SloaneD,,Doug Sloane,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PayneD,,Douglas Payne,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SillsD,,Drew Sills,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,durwinw,,Durwin Wallace,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ChumleyD,,Dustin Chumley,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CobbD,,Dustin Cobb,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,dylanb,,Dylan Berry,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HallD,,Dylan Hall,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MillsD,,Dylan Mills,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PoplinD,,Dylan Poplin,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RoseD,,Dylan Rose,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesE,,Earo Jones,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MayfieldE,,Eddie Mayfield,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,VazquezE,,Eddie Vazquez,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OrtizE,,Edgar Ortiz,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BatesE,,Edward Bates,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,edwardn,,Edward Nance,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BarkerE,,Edwin Barker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HernandezE,,Eliazar Hernandez,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,EttaE,,Elvis Etta,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThomasE,,Emanual Thomas,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CalkinsE,,Eric Calkins,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HooperE,,Eric Hooper,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KelleyE,,Eric Kelley,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ScottE,,Eric Scott,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BoydE,,Erin Boyd,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CarterE,,Eugene Carter,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilsonE,,Evan Wilson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CalocaF,,Fernando Caloca,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CrossF,,Forrest Cross,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ConcepcionF,,Francisco Concepcion,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SeverinoF,,Francisco Severino,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PorcilloF,,Frank Porcillo,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CloughF,,Franklin Clough,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HillF,,Frazier Hill,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,gabrielm,,Gabriel Moreno,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FosterG,,Gary Foster,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MasonG,,Gary Mason,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DrakeG,,Garyn Drake,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JordanG,,Gene Jordan,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithG,,Gene Smith,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HuttoG,,George Hutto,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,gilbertl,,Gilbert Lopez,5623203033,,,,,,,,FALSE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,gilbertop,,Gilberto Pereira,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DavisG,,Gordon Davis,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,gblanchard,,Greg Blanchard,4242133039,,,,,,,,FALSE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HadsockG,,Greg Hadsock,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WaddyG,,Greg Waddy,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HalsteadG,,Gregory Halstead,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PriceG,,Griffin Price,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CrespoG,,Gus Crespo,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BeckwithG,,Guy Beckwith,,,,,,,,,FALSE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BullockG,,Guy Bullock,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HickcoxH,,Harold Hickcox,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,hawkej,,Hawke Joseph,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,RoperH,,Hayden Roper,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,hollyc,,Holly Cassidy,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,WillettH,,Howard Willett,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GomezH,,Hunter Gomez,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HowardH,,Hunter Howard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ToddH,,Hunter Todd,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ianb,,Ian Baker,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MedinaI,,Irving Medina,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,isaacr,,Isaac Rios,8608692880,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BaileyJ,,Jack Bailey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jacksons,,Jackson Stanley,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BellarJ,,Jacob Bellar,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jacobh,,Jacob Heinz,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,LooneyJ,,Jacob Looney,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jacobm,,Jacob Maucelli,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,McNeillJ,,Jacob McNeill,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PritchettJ,,Jacob Pritchett,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohnsonJ,,Jaeaundra Johnson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BerryhillJ,,James Berryhill,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CampbellJ,,James Campbell,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CarterJ,,James Carter,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FosterJ,,James Foster,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HanshewJ,,James Hanshew,,,,,,,,,FALSE,SERVICE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,New York - EST/EDT
+,HarrodJ,,James Harrod,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohannesJ,,James Johannes,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NadeauJ,,James Nadeau,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RaymerJ,,James Raymer,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RinneJ,,James Rinne,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThomasJ3,,James Thomas,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RoperJ,,Jamie Roper,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jaredg,,Jared Greenlese,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CallahamJ,,Jason Callaham,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CordellJ,,Jason Cordell,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HaaseJ,,Jason Haase,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohnsonJ2,,Jason Johnson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jasonl,,Jason Lang,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SummersJ,,Jason Summers,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jasonw,,Jason Williams,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,WilsonJ,,Jason Wilson,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,javiers,,Javier Sevenello,,,,,,,,,FALSE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HughesJ,,Jay Hughes,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesJ,,Jay Jones,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ClarkJ,,Jayden Clark,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavisJ,,Jeff Davis,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GatwoodJ,,Jeff Gatwood,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HalsellJ,,Jeff Halsell,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HoltJ,,Jeff Holt,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,McConnellJ,,Jeff McConnell,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ParkerJ2,,Jeff Parker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SolomonJ,,Jeff Solomon,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SolomonJ2,,Jeff Solomon Jr.,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BarrentineJ,,Jeremy Barrentine,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GumzJ,,Jeremy Gumz,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HolderJ,,Jeremy Holder,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jeremyj,,Jeremy Jenkins,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MulderJ,,Jeremy Mulder,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ParkerJ,,Jeremy Parker,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TenisonJ,,Jeremy Tenison,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ArsenaultJ,,Jerry Arsenault,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KaoJ,,Jesse Kao,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OrtizJ,,Jesse Ortiz,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MisuraJ,,Jim Misura,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HuttonJ,,Jimmy Hutton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KingJ,,Jimmy King,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LantzJ,,Jimmy Lantz,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,O'ConnellJ,,Joe O'Connell,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SluderJ,,Joe Sluder,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ViscioJ,,Joe Viscio,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,joelr,,Joel Ramsaroop,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HuttoJ,,Joey Hutto,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MillsJ,,Joey Mills,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,joeyp,,Joey Pinocci,,,,,,,,,FALSE,NON-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ShepardJ,,Joey Shepard,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ChanneyJ,,John Channey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ClarkJ2,,John Clark,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,johnc,,John Culpepper,2817386686,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,EwingJ,,John Ewing,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,johnh,,John Henry,8322452474,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,KirkJ,,John Kirk,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,McDanielJ,,John McDaniel,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OberryJ,,John Oberry,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WaltonJ,,John Walton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WaltonJ2,,Johnathan Walton,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,johnnyg,,Johnny Gonzales,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ManterisJ,,Johnny Manteris,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GravesJ,,Jon Graves,,,,,,,,,TRUE,service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HartJ,,Jon Hart,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HeapeJ,,Jon Heape,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jonathenh,,Jonathen Henry,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BelcherJ,,Jordan Belcher,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FearringtonJ,,Jordan Fearrington,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,jordarnp,,Jordan Palms,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,jordant,,Jordan Trosper,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DavisJ2,,Jordon Davis,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CottoJ,,Jorge Cotto,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,UrbietaJ,,Jose Urbieta,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HuntJ,,Joseph Hunt,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KeithlineJ,,Joseph Keithline,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NitschkeJ,,Joseph Nitschke,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,josephp,,Joseph Pellkey,2487045431,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,josephw,,Joseph Weikel,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,josephwe,,Joseph Wenzel,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CooperJ,,Josh Cooper,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,joshr,,Josh Ruelas,,,,,,,,,TRUE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SmithJ,,Josh Smith,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThomasJ2,,Josh Thomas,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,joshuad,,Joshua Downie,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GrubbJ,,Joshua Grubb,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PiperJ,,Joshua Piper,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThomasJ,,Joshua Thomas,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,juanc,,Juan Carlos Franco Cerecedo,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BelkJ,,Justin Belk,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,EwingJ2,,Justin Ewing,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohnstonJ,,Justin Johnston,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesJ2,,Justin Jones,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MooreJ,,Justin Moore,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SchornJ,,Justin Schorn,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithJ2,,Justin Smith,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithK,,KJ Smith,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BlockingerK,,Kaleb Blockinger,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FranklinK,,Kaleb Franklin,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HolcombK,,Keaston Holcomb,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PoplinK,,Keenan Poplin,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JumperK,,Keith Jumper,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KoonK,,Keith Koon,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilliamsK,,Kelvis Williams,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilliamsK2,,Kenny Williams,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ReedK,,Kent Reed,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PalmerK,,Keri Palmer,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CroweK,,Kevin Crowe,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,kevind,,Kevin Davis,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GannK,,Kevin Gann,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HarperK,,Kevin Harper,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesK,,Kevin Jones,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MillerK,,Kevin Miller,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PoteetK,,Kevin Poteet,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StarringK,,Kevin Starring,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TaylayK,,Kevin Taylay,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,kevinv,,Kevin Valdes,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,kevinw,,Kevin Ward,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,IssaK,,Kifah Issa,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JordanK,,Kirk Jordan,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CorwinK,,Kody Corwin,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,koryf,,Kory Fitch,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,krisy,,Kris York,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,JointerK,,Kubby Jointer,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BurnetteK,,Kyle Burnette,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,kylec,,Kyle Coffey,,Jonathan Coffey is legal name,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CulpK,,Kyle Culp,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MillsK,,Kyle Mills,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PerryK,,Kyle Perry,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,laithk,,Laith Kalasho,2488421522,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CardwellL,,Larry Cardwell,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DukeL,,Larry Duke,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,leep,,Lee Parker,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,KiltsL,,Levi Kilts,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WalkerL,,Lewis Walker,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BurckhalterL,,Logan Burckhalter,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HowellL,,Logan Howell,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OutlawL,,Logan Outlaw,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RoperL,,Logan Roper,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesL,,Louie Jones,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FernandezL,,Luis Fernandez,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,luisg,,Luis Gonzalez,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,JanuszL,,Lynn Janusz,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WoodL,,Lynn Wood,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,1235468,,MICHAEL WILLIAMS,,,,Driver Type:Independent Contactor,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DinaniM,,MJ Dinani,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BoydM,,Malik Boyd,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,malikl,,Malik Lambert,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,maliks,,Malik Sims,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,RodriguezM,,Manny Rodriguez,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,manuels,,Manuel Mejia Sierra,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,marca,,Marc Abernathy,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GormanM,,Margaret Gorman,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mariodjr,,Mario Dieguez Jr.,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,mariodsr,,Mario Dieguez Sr.,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CasaboM,,Mark Casabo,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,markf,,Mark Favorite,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FountainM,,Mark Fountain,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MoonM,,Mark Moon,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MooneyM,,Mark Mooney,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PinheriroM,,Mark Pinheriro,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TaylorM,,Mark Taylor,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BrelandM,,Marquais Breland,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MartinezM,,Martin Martinez,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MonfreM,,Marty Monfre,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,marvinm,,Marvin Molina,,,,,,,,,TRUE,Non ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,KirkupM,,Mason Kirkup,,,,,,,,,TRUE,SVR,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mattm,,Matt Holman,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NealM,,Matt Neal,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mattp,,Matt Palmquist,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,RauschenbergM,,Matt Rauschenberg,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DoverM,,Matthew Dover,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FlynnM,,Matthew Flynn,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesM,,Matthew Jones,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SharpeM,,Matthew Sharpe,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SorideM,,Matthew Soride,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThompsonM,,Matthew Thompson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mauriced,,Maurice Dennis,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,maxdl,,Max Dowling-Leshinsky,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,JacksonM,,Max Jackson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KelleyM,,Max Kelley,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LeonardM,,Mel Leonard,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KafelM,,Melissa Kafel,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HuffmanM,,Micah Huffman,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ChunnM,,Michael Chunn,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,michaelc,,Michael Cishek,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GoolsbyM,,Michael Goolsby,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HillM,,Michael Hill,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,New York - EST/EDT
+,micahelk,,Michael Kata,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,McNeilM,,Michael McNeil,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,McneillM,,Michael Mcneill,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,O'GradyM,,Michael O'Grady,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PierceM,,Michael Pierce,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ShippM,,Michael Shipp,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SnowM,,Michael Snow,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SpencerM,,Michael Spencer,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SwordM,,Michael Sword,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TincherM,,Michael Tincher,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,miguelc,,Miguel Carrera,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,PenaM,,Miguel Pena,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,miguelto,,Miguel Torres,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BlackwellM,,Mike Blackwell,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mikeb,,Mike Bowser,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,miked,,Mike Doyle,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,mikef,,Mike Feltner,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FranklinM,,Mike Franklin,,"Michael ""Mike"" Franklin",,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HoardM,,Mike Hoard,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesM2,,Mike Jones,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KayM,,Mike Kay,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MadridM,,Mike Madrid,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,mikeo,,Mike Olson,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,PorterM,,Mike Porter,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ThompsonM2,,Mike Thompson,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CastanedaM,,Mitch Castaneda,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CoyneM,,Mitch Coyne,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PaceM,,Myles Pace,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PaulN,,Nate Paul,,,,,,,,,FALSE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MurrayN,,Nathan Murray,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OliverN,,Nathan Oliver,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WhiteN,,Nathan White,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ntanzo,,Neil Tanzo,7149816583,,,,,,,,TRUE,Not ELD,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CaricoN,,Nicholas Carico,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HalloranN,,Nicholas Halloran,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RyderN,,Nick Ryder,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,StarlingN,,Nick Starling,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,YoungN,,Nick Young,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,nickys,,Nicky Singkhoumkhong,,,,,,,,,TRUE,non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,nickyw,,Nicky Warren,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,nkosim,,Nkosi Moore,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,TwymanN,,Noah Twyman,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,nolanp,,Nolan Podmore,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FarleyN,,Nolyn Farley,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GoshN,,Norman Gosh,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,normanm,,Norman Marshall,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ClarkeO,,O'Neil Clarke,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WalshP,,Pat Walsh,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NaughtonP,,Patrick Naughton,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithP,,Patrick Smith,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GravesP,,Paul Graves,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,McDanielP,,Paul McDaniel,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MulderP,,Paul Mulder,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PlogP,,Paul Plog,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LucasP,,Perry Lucas,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,philc,,Phil Cosper,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HeatherlyP,,Phillip Heatherly,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,phillipr,,Phillip Ricketts III,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BeyahQ,,Qadree Beyah,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,raabbii,,Raabbi Ismail,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ramsesc,,Ramses Cruz,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MenendezR,,Raul Menendez,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,reggieb,,Reggie Barajas,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,StewartR,,Reggie Stewart,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RuffiniR,,Rich Ruffini,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CarrR,,Richard Carr,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DeruiterR,,Richard Deruiter,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JacksonR,,Richard Jackson,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KeableR,,Richard Keable,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,Richardm,,Richard Miller,,,,,,,,,TRUE,NON-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BaileyR,,Rick Bailey,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BatistaR,,Ricky Batista,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HolestinR,,Ricky Holestin,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,RitenourR,,Ricky Ritenour,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ArnR,,Robbie Arn,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GormanR,,Robert Gorman,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HorvathR,,Robert Horvath,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,robertm,,Robert Manz,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MarosR,,Robert Maros,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PalmerR,,Robert Palmer,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,RaginR,,Robert Ragin,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,robertr,,Robert Riley,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,"Wheel Pros, LLC","5347 S Valentia Way, Suite 200",1192899,Manchester - 1026,249 Progress Drive,,New York - EST/EDT
+,RiveraR,,Robert Rivera,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,AlonsoR,,Roberto Alonso,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,AlonssoR,,Roberto Alonsso,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CartayaR,,Roberto Cartaya,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SaylorR,,Rocky Saylor,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavisR,,Rodney Davis,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JonesR,,Roger Jones,,,,,,,,,TRUE,1500 truck,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,AragonR,,Rolando Aragon,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,CainR,,Rudy Cain,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,CarterR,,Russell Carter,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SnowR,,Rustie Snow,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ryand,,Ryan Duke,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GannawayR,,Ryan Gannaway,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,LewisR,,Ryan Lewis,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PfeiferR,,Ryan Pfeifer,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ryans,,Ryan Sandbo,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SargentR,,Ryan Sargent,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ryanw,,Ryan Welles,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,sroans,,SCott,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,scc.roan,,SCotts,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GavitoS,,Salomon Gavito,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,AlderS,,Sam Alder,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JohnsonS,,Scott Johnson,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,scottk,,Scott Killian,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,sroan,,Scott Roan,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,RoseS,,Scott Rose,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SandhagenS,,Scott Sandhagen,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ClarkS,,Sean Clark,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavisS,,Sean Davis,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,PattersonS,,Sean Patterson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WillisS,,Sean Willis,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,Adame-HernandezS,,Sergio Adame-Hernandez,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,BlankS,,Seth Blank,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DumasS,,Seth Dumas,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HooksS,,Shane Hooks,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FordS,,Shaul Ford,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BernasS,,Shawn Bernas,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OldsS,,Shawn Olds,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,PowersS,,Shawn Powers,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,shawns,,Shawn Stevenson,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ThompsonS,,Shawn Thompson,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,LongS,,Skylar Long,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,SmithS,,Skyler Smith,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ChakrabartiS,,Soumya Chakrabarti,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GertschS,,Stacy Gertsch,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BatesS,,Stephen Bates,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GardnerS,,Stephon Gardner,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,stephonh,,Stephon Horne,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HendersonS,,Steve Henderson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BarkerS,,Steven Barker,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GatewoodS,,Steven Gatewood,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,stevenl,,Steven Leighton,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,PoseyS,,Steven Posey,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HarrisT,,Tacarra Harris,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HollandT,,Tammy Holland,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HolcombT,,Tanner Holcomb,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,teddys,,Teddy Shaw,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MackT,,Terrence Mack,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BryantT,,Terry Bryant,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DelabarT,,Terry Delabar,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DriverT,,Test Driver,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,NewmanT,,Tevin Newman,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HeapeT,,Thai Heape,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,thomasm,,Thomas Monroe,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,ProvardT,,Thomas Provard,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WattsT,,Thomas Watts,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,timj,,Tim Jenkins,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,LankfordT,,Tim Lankford,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MidkiffT,,Tim Midkiff,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SpradleyT,,Tim Spradley,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DykesT,,Timothy Dykes,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,timothyl,,Timothy Lang,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HarrillT,,Todd Harrill,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FlemingT,,Tom Fleming,,,,,,,,,TRUE,No ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,FenderT,,Tommie Fender,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ReevesT,,Tommy Reeves,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GonzalesT,,Tony Gonzales,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MaloneT,,Tony Malone,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KileT,,Trace Kile,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,AndrewsT,,Travis Andrews,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FurrT,,Travis Furr,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,GibsonT,,Travis Gibson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HilliardT,,Travis Hilliard,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MatsonT,,Travis Matson,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WilliamsT,,Travis Williams,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SneadT,,Tray Snead,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,FinneyT,,Trevor Finney,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,BuecheT,,Trey Bueche,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,AllenT,,Tyler Allen,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,tylere,,Tyler Epps,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,GallantT,,Tyler Gallant,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,HayesT,,Tyler Hayes,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,JanuszT,,Tyler Janusz,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,JenkinsT,,Tyler Jenkins,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,KaminksiT,,Tyler Kaminksi,,,,,,,,,TRUE,SERVICE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,,,,,,,New York - EST/EDT
+,KennedyT,,Tyler Kennedy,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ParkerT,,Tyler Parker,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SandiferT,,Tyler Sandifer,,,,,,,,,TRUE,Drives 1500,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,VansickleT,,Tyler Vansickle,,,,,,,,,TRUE,Service,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,undraw,,Undra Woods,8325124384,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,MolockW,,Wallace Molock,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,WasdenW,,Warren Wasden,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,DavisonW,,Wayne Davison,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,wayner,,Wayne Ramirez,,,,,,,,,TRUE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,VanderheidenW,,Wesley Vanderheiden,,,,,,,,,TRUE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,wills,,Will Shipkosky,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,HarveyW,,William Harvey,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,EldersW,,Willie Elders,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,winderl,,Winder Luna,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,SullivanW,,Wynn Sullivan,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,zachb,,Zach Baron,,,,,,,,,FALSE,Non-ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT
+,DeanZ,,Zach Dean,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Chicago - CST/CDT
+,DillowZ,,Zachary Dillow,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,OswaltZ,,Zack Oswalt,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,ConwellZ,,Zane Conwell,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,MorrisZ,,Zane Morris,,,,,,,,,FALSE,NO ELD,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,New York - EST/EDT
+,asd-f,,asdf,,,,,,,,,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,,,,,,,Los Angeles - PST/PDT

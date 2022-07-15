@@ -45,6 +45,30 @@ figure, header, nav, section, article, aside, footer, figcaption {
 /* VOJTA: */
 mark {background-color: yellow;}
 
+
+.collapsibleX {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.activeX, .collapsibleX:hover {
+  background-color: #555;
+}
+
+.contentX {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
 .clearfix:after {
   content: ".";
   display: block;

@@ -77,9 +77,19 @@ def root():
 
         
 
-        #Gets the TEXTBOX variable from textarea then based on if there is text or not it will proceed slitly differently
+        #Gets the TEXTBOX variable from textarea then based on if there is file or not it will proceed slitly differently
         user_csv_userinput = request.form.get('user_csv')
         
+        #determining which example to use: working or non-working
+        example = request.form.get('upload_working')
+        
+        #CSV Type:
+        csv_type = request.form.get('csv_type')
+          
+        #Values: Addresses_Geofences, tags_and_attributes, Fuel, Assets, Routes, Users, Drivers  
+        
+        
+        #FEEDBACK FIRST CHECK
         
         if ((str(feedback_name) != "None")): #for some reason default value is none, not blank.. (str(feedback_name) != "")
           df_data_vojta = ""
@@ -112,6 +122,69 @@ def root():
 
           #Redirects page:   
           return render_template('data.html', df2=feedback_name)
+        
+        #//////////////////////////////////////////////////////////
+        #WORKING EXAMPLE
+        #//////////////////////////////////////////////////////////
+        elif (user_csv_userinput == "" and example == "working"):
+          # Input file
+          
+          # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
+          file = 'FINAL_working_example.csv'
+          tempfile_path = 'FINAL_working_example.csv'
+          
+          #tempfile_path = tempfile.NamedTemporaryFile().name
+          #file.save(tempfile_path)
+
+          # Put input file in dataframe
+          df = pd.read_csv('FINAL_working_example.csv') #, na_filter=False) #, encoding='cp1252'
+          df_no_Nan = pd.read_csv(tempfile_path, na_filter=False) #, encoding='cp1252'
+
+          df2 = df.rename(str.lower, axis='columns')
+          df2_no_Nan = df_no_Nan.rename(str.lower, axis='columns')
+
+          df_data_vojta = pd.DataFrame(df2)
+
+          
+          #NOW TO MAKE TABLE ON NEXT PAGE:
+          table_data = df2_no_Nan #sheet
+          reader = csv.DictReader(table_data)
+          
+          
+          for row in reader:
+              results.append(dict(row))
+
+          fieldnames = [key for key in results[0].keys()]
+
+        #//////////////////////////////////////////////////////////
+        #NON-WORKING EXAMPLE
+        #//////////////////////////////////////////////////////////
+        elif (user_csv_userinput == "" and example == "non-working"):
+          # Input file
+          
+          # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
+          file = 'FINAL_non_working_example.csv'
+          tempfile_path = 'FINAL_non_working_example.csv'
+
+          # Put input file in dataframe
+          df = pd.read_csv('FINAL_non_working_example.csv') #, na_filter=False) #, encoding='cp1252'
+          df_no_Nan = pd.read_csv(tempfile_path, na_filter=False) #, encoding='cp1252'
+
+          df2 = df.rename(str.lower, axis='columns')
+          df2_no_Nan = df_no_Nan.rename(str.lower, axis='columns')
+
+          df_data_vojta = pd.DataFrame(df2)
+
+          
+          #NOW TO MAKE TABLE ON NEXT PAGE:
+          table_data = df2_no_Nan #sheet
+          reader = csv.DictReader(table_data)
+
+          for row in reader:
+              results.append(dict(row))
+
+          fieldnames = [key for key in results[0].keys()]
+
         
         #//////////////////////////////////////////////////////////
         #executing FILE UPLOAD (Doesnt Quite work with some files)
@@ -163,6 +236,11 @@ def root():
           df2_no_Nan = df_no_Nan.rename(str.lower, axis='columns')
 
           df_data_vojta = pd.DataFrame(df2)
+          
+          #check if file bigger than 500 lines.. 
+          if(len(df_data_vojta)>500 ):
+            myerror = "File bigger than 500 lines. Please reduce file to 500 entries."
+            return render_template('home.html', error=myerror)
 
           
           #NOW TO MAKE TABLE ON NEXT PAGE:
@@ -607,7 +685,7 @@ def root():
         msg = EmailMessage()
         msg['Subject'] = ('CSV Checker Results - '+myfile) # Subject of Email
         msg['From'] = EmailAdd
-        msg['To'] = ['vojtaripa@gmail.com', 'vojta.ripa@samsara.com'] # Reciver of the Mail
+        msg['To'] = ['vojtaripa@gmail.com', 'vojta.ripa@samsara.com', 'scott.roan@samsara.com'] # Reciver of the Mail
         msg.set_content(body1) # Email body or Content
 
         msg.add_alternative("""\
