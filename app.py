@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+from flask.wrappers import Response
+import git
 #import requests
 import pprint
 import csv
@@ -17,6 +19,17 @@ import urllib
 app = Flask(__name__)
 
 scroll=False
+
+
+#CODE WILL PULL FROM GITHUB and check for updates to github code
+@app.route('/git_update', methods=['POST'])
+def git_update():
+ repo = git.Repo('./CSV-Checker-Web-Program')
+ origin = repo.remotes.origin
+ repo.create_head('main', 
+ origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
+ origin.pull() 
+ return '', 200
 
 @app.route('/', methods=['GET', 'POST'])
 def root():
