@@ -12,6 +12,7 @@ import smtplib #EMAIL
 from email.message import EmailMessage #EMAIL
 import json	 #API
 import urllib
+import static.functions
 
 
 #from io import StringIO
@@ -30,6 +31,7 @@ def git_update():
  origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
  origin.pull() 
  return '', 200
+
 
 @app.route('/', methods=['GET', 'POST'])
 def root():
@@ -333,17 +335,7 @@ def root():
 
         #Section 6: For New Users - Creates Drivers/Username/ID lists and checks for required parameters
         
-        def create_driver_list(CSV_file):
-            driver_list = df_data['name'].tolist()
-            driver_list2 = []
-            for i in driver_list:
-                if i not in driver_list2:
-                    driver_list2.append(i)
-                else:
-                    print('There are two users in your CSV file with the name'+ i)
-                    output.append('There are two users in your CSV file with the name ' + i)
-                    highlight.append(i)
-            return driver_list2
+        #function was here: create_driver_list
         
         
         def create_user_list(CSV_User_File):
@@ -653,7 +645,7 @@ def root():
 
         #1. Potential Issues with your Driver Set Up:
         output.append('1. Potential Issues with your Driver Set Up:')
-        driver_check        = driver_check(remove_blank_driver(create_driver_list(df_data_vojta)))
+        driver_check        = driver_check(remove_blank_driver(static.functions.create_driver_list(df_data_vojta,df_data,output, highlight)))
         username_check      = username_check(remove_blank_user(create_user_list(df_data_vojta)))
 
 
