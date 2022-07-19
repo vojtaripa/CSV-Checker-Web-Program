@@ -106,19 +106,19 @@
                         </div>
 <h2><u>CSV file type (purpose)</u></h2>
                         <input type="radio" id="drivers" name="csv_type" value="Drivers" checked>
-                        <label for="drivers">Drivers</label><br>
+                        <label for="drivers">Drivers</label>
                           
                         <input type="radio" id="users" name="csv_type" value="Users" disabled>
-                        <label for="users">Users</label><br>
+                        <label for="users">Users</label>
                           
                         <input type="radio" id="routes" name="csv_type" value="Routes" disabled>
                         <label for="routes">Routes</label><br>
                           
                         <input type="radio" id="assets" name="csv_type" value="Assets" disabled>
-                        <label for="assets">Assets</label><br>
+                        <label for="assets">Assets</label>
                           
                         <input type="radio" id="fuel" name="csv_type" value="Fuel" disabled>
-                        <label for="fuel">Fuel</label><br>
+                        <label for="fuel">Fuel</label>
 
                         <input type="radio" id="tags_and_attributes" name="csv_type" value="tags_and_attributes" disabled>
                         <label for="tags_and_attributes">tags and attributes</label><br>
@@ -278,7 +278,7 @@
                         <h4>Table</h4>
                         <p>Your CSV data in a table format</p>
                         <!-- OUTPUT / TABLE-->
-                        <div class="mt-4" style=" overflow-y: auto; overflow-x: auto; height: 400px; background-color: #fba70b;  width: 5000px; ">
+                        <div class="mt-4" id="table2" style=" overflow-y: auto; overflow-x: auto; height: 400px; background-color: #fba70b;  width: 5000px; ">
                           {{ mydf | safe }}
                           <!--new table-->
                           
@@ -643,8 +643,47 @@ setTimeout(
         $("#my_output_textbox").append("<div style='font-size: 100px;'>File Looks good <i class='fa fa-check' aria-hidden='true' fa-5x style='color:green !important; size: 500%'></i></div>");
 
       }
+      //HIGHLIGHTING KEY WORDS:
+      //////////////////////////////////////////////////////////////
+            // replace ] with nothing.
+            highlight_array = highlight_array.replaceAll("']", "");
 
+            // replace [ with nothing.
+            highlight_array = highlight_array.replaceAll("['", "");
+      
+            //works, replaces all ' with " to make array
+            highlight_array = highlight_array.replaceAll("\'", "");
+      
+            // replace  ', ' with nothing.
+            highlight_array = highlight_array.replaceAll("\', \'", "");
+      
+            //finally adding [] around the object
+            //highlight_array = "[\""+highlight_array+"\"]"
 
+            /*
+            alert(highlight_array); // ["Steve", "Qwerty", "Vehicle Selection Tag.1", "Trailer Selection Tag.1", "Start Of Day Workflow.1", "Tags.1", "Attributes.1"]
+            var highlight_type = typeof(highlight_array);
+            alert(highlight_type);
+            */
+
+            const myArray = highlight_array.split(", ");
+
+            for(let i=0; i<=myArray.length; i++) {
+              console.log(myArray[i])  // 1 2 3 4 5 6
+              
+              //HIGHLIGHTS THE TABLE BELOW / CSV FILE TABLE FORMAT PORTION:
+              $("#table2 td:contains('" + myArray[i] + "')").css("background-color", "yellow");
+              $("#table2 th:contains('" + myArray[i] + "')").css("background-color", "yellow");
+              $("#table2 td:contains('" + myArray[i].toLowerCase() + "')").css("background-color", "yellow");
+              $("#table2 th:contains('" + myArray[i].toLowerCase() + "')").css("background-color", "yellow");
+              
+              //HIGHLIGHTS THE REUSLT ERRORS TABLE
+              highlightName(myArray[i]);
+            }
+
+            //BEFORE: ['Steve', 'Qwerty', 'Vehicle Selection Tag.1', 'Trailer Selection Tag.1', 'Start Of Day Workflow.1', 'Tags.1', 'Attributes.1']
+
+      /*
       //HIGHLIGHTING:
       for(var key in highlight_array)
       {
@@ -653,10 +692,17 @@ setTimeout(
 
         //THIS CURRENTLY TIMES OUT:
         //highlightName(highlight_array[key]);
+
+        //alert(highlight_array[key]);
       }
+      */
+ 
 
       //Does highlight Steve, but then puts 2 extra steves in...
-      highlightName("Peer Group");
+      //highlightName("Peer Group");
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
       function highlightName(sName)
       {
