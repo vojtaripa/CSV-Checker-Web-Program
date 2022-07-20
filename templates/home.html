@@ -193,7 +193,7 @@
                       <div class="mt-4" id="my_output_textbox" style="width: 100%; overflow: scroll; overflow-y: scroll; overflow-x: scroll; height: 400px; background-color: #fba70b; ">
 
 
-                         <!----------------------hidden:------------------------------------------------------------->
+                         <!-- -------------------hidden:-----------------------------------------------------------  -->
                           <p style="display: none">HighLight Array: highlight_array</p>
                           <textarea class="form-control" id="highlight_array" style="display: none">{{highlight_array}}</textarea>
                           
@@ -588,7 +588,12 @@ setTimeout(
         // DIVIDE UP HTTP / LINK RESPONSES
 
         //FIRST IF THERE ARE ANY HEADERS, PRINT THOSE DIFFERENTLY
-        if(myJsonArray[key].includes("1. Potential Issues with your Driver Set Up:"))
+        if(myJsonArray[key].includes("1. Potential Issues with your Driver Set Up: Driver Check"))
+        {
+          $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
+          i--;
+        }
+        else if(myJsonArray[key].includes("1. Potential Issues with your Driver Set Up: Username Check"))
         {
           $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
           i--;
@@ -604,6 +609,21 @@ setTimeout(
           i--;
         }
         else if(myJsonArray[key].includes("4. Potential Issues with your CSV Headers:"))
+        {
+          $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
+          i--;
+        }
+        else if(myJsonArray[key].includes("5. Potential Issues with your Time Zones:"))
+        {
+          $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
+          i--;
+        }
+        else if(myJsonArray[key].includes("6. Potential Issues with your ELD Day Start Times:"))
+        {
+          $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
+          i--;
+        }
+        else if(myJsonArray[key].includes("7. Potential Issues with your Driver Statuses:"))
         {
           $('#table').append('<tr><th style="background-color: #f1556a; " colspan="3">' + myJsonArray[key] + '</th></tr>');
           i--;
@@ -670,7 +690,11 @@ setTimeout(
 
             for(let i=0; i<=myArray.length; i++) {
               console.log(myArray[i])  // 1 2 3 4 5 6
-              
+
+              if(typeof myArray[i] === 'undefined'){ 
+                //DO NOTHING.
+              }
+              else{
               //HIGHLIGHTS THE TABLE BELOW / CSV FILE TABLE FORMAT PORTION:
               $("#table2 td:contains('" + myArray[i] + "')").css("background-color", "yellow");
               $("#table2 th:contains('" + myArray[i] + "')").css("background-color", "yellow");
@@ -678,7 +702,8 @@ setTimeout(
               $("#table2 th:contains('" + myArray[i].toLowerCase() + "')").css("background-color", "yellow");
               
               //HIGHLIGHTS THE REUSLT ERRORS TABLE
-              highlightName(myArray[i]);
+              //highlightName(myArray[i]);
+              }
             }
 
             //BEFORE: ['Steve', 'Qwerty', 'Vehicle Selection Tag.1', 'Trailer Selection Tag.1', 'Start Of Day Workflow.1', 'Tags.1', 'Attributes.1']

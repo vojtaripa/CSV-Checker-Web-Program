@@ -365,25 +365,37 @@ def root():
         ##########################################################################
 
         #1. Potential Issues with your Driver Set Up:
-        output.append('1. Potential Issues with your Driver Set Up:')
-        driver_check        = static.functions.driver_check(static.functions.remove_blank_driver(static.functions.create_driver_list(df_data_vojta,df_data,output, highlight),output,highlight),output, highlight)
-        username_check      = static.functions.username_check(static.functions.remove_blank_user(static.functions.create_user_list(df_data_vojta,df_data,output,highlight),output,highlight),output,highlight)
+        output.append('1. Potential Issues with your Driver Set Up: Driver Check')
+        driver_check        = static.functions.driver_check(static.functions.remove_blank_driver(static.functions.create_driver_list(df_data_vojta,output,highlight),output,highlight),output, highlight)
+        output.append('1. Potential Issues with your Driver Set Up: Username Check')
+        username_check      = static.functions.username_check(static.functions.remove_blank_user(static.functions.create_user_list(df_data_vojta,output,highlight),output,highlight),output,highlight)
 
 
         #2. Potential Issues with your License Plate Numbers or States
         output.append('2. Potential Issues with your License Plate Numbers or States:')
         blank_licensenumber = static.functions.blank_licensenumber(df_data_vojta, df_data, output, highlight)
-        blank_licensestate  = static.functions.blank_licensestate(df_data_vojta, df_data, output, highlight)
+        #NO LONG USED?  = static.functions.blank_licensestate(df_data_vojta, df_data, output, highlight)
 
 
         #3. Potential Issues with your Driver Rulesets
         output.append('3. Potential Issues with your Driver Rulesets:')
-        ruleset             = static.functions.ruleset(df_data_vojta, df_data, output)
+        ruleset             = static.functions.ruleset(df_data_vojta, output, highlight)
 
 
         #4. Potential Issues with your CSV Headers
         output.append('4. Potential Issues with your CSV Headers:')
         invalid_header      = static.functions.invalid_header(df_data_vojta, output, highlight)
+        
+        #NEW
+        output.append('5. Potential Issues with your Time Zones:')
+        static.functions.timezone_check(df_data_vojta,output,highlight)
+        
+        output.append('6. Potential Issues with your ELD Day Start Times:') 
+        static.functions.start_time(df_data,highlight, output)
+        
+        output.append('7. Potential Issues with your Driver Statuses:')
+        static.functions.driverstatus(df_data, output, highlight)
+        
 
         print("Object type: \n")
         print(df_data_vojta)
@@ -394,7 +406,7 @@ def root():
         pretty_output = pprint.pprint(output)
 
         #size is how many errors I have, Ignooring the 4 titles / functions I'm running
-        size = (len(output)-4)
+        size = (len(output)-8)  #If new functions need to add header here... 
 
         #EMAIL STUFF
         #////////////////////////////////////////////////////////////////////////////////////
