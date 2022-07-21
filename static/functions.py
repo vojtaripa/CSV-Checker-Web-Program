@@ -285,74 +285,77 @@ def invalid_header(hlist, output, highlight):
 
 
 def timezone_check(df_data,output,highlight):
-  tz_list = df_data['home terminal timezone'].tolist()
-  n = 0
-  tz_rows = []
-  for x in tz_list:
-    if n < len(tz_list):
-      if str(x) not in time_zones:
-        n += 1
-        tz_rows.append(n + 1)     
-      else: 
-        n += 1
-    if n >= len(tz_list):
-          if len(tz_rows) >= 10:
-            print('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
-            output.append('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
-            highlight.append(str(tz_rows))
-          if len(tz_rows) < 10:
-            for a in range(len(tz_rows)):
-              print('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')    
-              output.append('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')
-              highlight.append(str(tz_rows[a]))
+  if 'home terminal timezone' in df_data:
+    tz_list = df_data['home terminal timezone'].tolist()
+    n = 0
+    tz_rows = []
+    for x in tz_list:
+      if n < len(tz_list):
+        if str(x) not in time_zones:
+          n += 1
+          tz_rows.append(n + 1)     
+        else: 
+          n += 1
+      if n >= len(tz_list):
+            if len(tz_rows) >= 10:
+              print('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
+              output.append('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
+              highlight.append(str(tz_rows))
+            if len(tz_rows) < 10:
+              for a in range(len(tz_rows)):
+                print('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')    
+                output.append('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')
+                highlight.append(str(tz_rows[a]))
   return ' '
 
 def start_time(df_data,highlight, output):
-  st_list = df_data['eld day start hour'].tolist()
-  n = 0
-  st_rows = []
-  for x in st_list: 
-    if n < len(st_list):
-      if x == 0: 
-        n += 1
-      elif x == 12:
-        n += 1
-      elif str(x) == 'nan':
-        n += 1
-      else:
-        n += 1
-        st_rows.append(n+1)
-    if n >= len(st_list):
-      if len(st_rows) >= 10:
-        print('The ELD Day Start Hours in rows ' + str(st_rows) + ' are invalid. Please update these times to either be 0, 12 or leave blank.')
-        output.append('The ELD Day Start Hours in rows ' + str(st_rows) + ' are invalid. Please update these times to either be 0, 12 or leave blank.')
-        highlight.append(str(st_rows))
-      if len(st_rows) < 10:
-        for a in range(len(st_rows)):
-          print('The ELD Day Start Hour in row ' + str(st_rows[a]) + ' is invalid. Please update the time to be 0, 12 or leave blank')      
-          output.append('The ELD Day Start Hour in row ' + str(st_rows[a]) + ' is invalid. Please update the time to be 0, 12 or leave blank')
-          highlight.append(str(st_rows[a]))  
-  return ' '
+  if 'eld day start hour' in df_data:
+    st_list = df_data['eld day start hour'].tolist()
+    n = 0
+    st_rows = []
+    for x in st_list: 
+      if n < len(st_list):
+        if x == 0: 
+          n += 1
+        elif x == 12:
+          n += 1
+        elif str(x) == 'nan':
+          n += 1
+        else:
+          n += 1
+          st_rows.append(n+1)
+      if n >= len(st_list):
+        if len(st_rows) >= 10:
+          print('The ELD Day Start Hours in rows ' + str(st_rows) + ' are invalid. Please update these times to either be 0, 12 or leave blank.')
+          output.append('The ELD Day Start Hours in rows ' + str(st_rows) + ' are invalid. Please update these times to either be 0, 12 or leave blank.')
+          highlight.append(str(st_rows))
+        if len(st_rows) < 10:
+          for a in range(len(st_rows)):
+            print('The ELD Day Start Hour in row ' + str(st_rows[a]) + ' is invalid. Please update the time to be 0, 12 or leave blank')      
+            output.append('The ELD Day Start Hour in row ' + str(st_rows[a]) + ' is invalid. Please update the time to be 0, 12 or leave blank')
+            highlight.append(str(st_rows[a]))  
+    return ' '
 
 def driverstatus(df_data, output, highlight):
-  n = 0
-  ds_list = df_data['driver status'].tolist()
-  ds_rows = []
-  for x in ds_list: 
-    if n < len(ds_list):
-      if str(x) not in driver_status:
-        n += 1
-        ds_rows.append(n+1)
-      else: 
-        n += 1
-    if n >= len(ds_list):
-        if len(ds_rows) >= 10:
-          print('The driver statuses in rows ' + str(ds_rows) + ' are invalid. Please correct them to Acitve, Deactivated or leave blank')
-          output.append('The driver statuses in rows ' + str(ds_rows) + ' are invalid. Please correct them to Acitve, Deactivated or leave blank')
-          highlight.append(str(ds_rows))
-        if len(ds_rows) < 10:
-          for a in range(len(ds_rows)):
-            print('The ELD Day Start Hour in row ' + str(ds_rows[a]) + ' is invalid. Please correct it to Acitve, Deactivated or leave blank')
-            output.append('The ELD Day Start Hour in row ' + str(ds_rows[a]) + ' is invalid. Please correct it to Acitve, Deactivated or leave blank')
-            highlight.append(str(ds_rows[a]))
-  return ' '    
+  if 'driver status' in df_data:
+    n = 0
+    ds_list = df_data['driver status'].tolist()
+    ds_rows = []
+    for x in ds_list: 
+      if n < len(ds_list):
+        if str(x) not in driver_status:
+          n += 1
+          ds_rows.append(n+1)
+        else: 
+          n += 1
+      if n >= len(ds_list):
+          if len(ds_rows) >= 10:
+            print('The driver statuses in rows ' + str(ds_rows) + ' are invalid. Please correct them to Acitve, Deactivated or leave blank')
+            output.append('The driver statuses in rows ' + str(ds_rows) + ' are invalid. Please correct them to Acitve, Deactivated or leave blank')
+            highlight.append(str(ds_rows))
+          if len(ds_rows) < 10:
+            for a in range(len(ds_rows)):
+              print('The ELD Day Start Hour in row ' + str(ds_rows[a]) + ' is invalid. Please correct it to Acitve, Deactivated or leave blank')
+              output.append('The ELD Day Start Hour in row ' + str(ds_rows[a]) + ' is invalid. Please correct it to Acitve, Deactivated or leave blank')
+              highlight.append(str(ds_rows[a]))
+    return ' '    
