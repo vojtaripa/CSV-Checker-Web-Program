@@ -297,13 +297,13 @@ def timezone_check(df_data,output,highlight):
         n += 1
     if n >= len(tz_list):
           if len(tz_rows) >= 10:
-            print('The Time Zones in rows ' + str(tz_rows) + ' are invalid. Please update them to one of these timezones: ' + str(time_zones))
-            output.append('The Time Zones in rows ' + str(tz_rows) + ' are invalid. Please update them to one of these timezones: ' + str(time_zones))
+            print('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
+            output.append('The Time Zones in rows ' + str(tz_rows) + ' are invalid.')
             highlight.append(str(tz_rows))
           if len(tz_rows) < 10:
             for a in range(len(tz_rows)):
-              print('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone. Please update it to one of these timezone: ' + str(time_zones))    
-              output.append('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone. Please update it to one of these timezone: ' + str(time_zones))
+              print('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')    
+              output.append('The Time Zone  on row ' + str(tz_rows[a]) +  ' is not an allowable timezone.')
               highlight.append(str(tz_rows[a]))
   return ' '
 
