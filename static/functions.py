@@ -273,10 +273,14 @@ def invalid_header(hlist, output, highlight):
         n += 1
   if n >= len(current_hlist):
     if len(invalid_header_rows) >= 10:
+        print('more than 10: ' + str(invalid_header_rows[0]))
+        invalid_header_rows_string = ', '.join(invalid_header_rows)
         print('The following headers are invalid: ' + str(invalid_header_rows))
-        output.append('The following headers are invalid: ' + str(invalid_header_rows))
-        highlight.append(str(invalid_header_rows))
+        output.append('The following headers are invalid: ' + invalid_header_rows_string)
+        highlight.append(invalid_header_rows_string)
     if len(invalid_header_rows) < 10:
+      print('Less than 10: ' + str(invalid_header_rows[0]))
+            
       for z in range(len(invalid_header_rows)):
         print('The header ' + str(invalid_header_rows[z]) + 'is not a recognized header. Please update this to match the guide found here: https://kb.samsara.com/hc/en-us/articles/4402804484621-Manage-Driver-Accounts')
         output.append('The header ' + str(invalid_header_rows[z]) + 'is not a recognized header. Please update this to match the guide found here: https://kb.samsara.com/hc/en-us/articles/4402804484621-Manage-Driver-Accounts')
