@@ -46,6 +46,19 @@ def root():
 
         tempfile_path = "none"
         file = "none"
+        extended_path = ""
+        
+        # IF Url = "http://127.0.0.1"#"https://"
+        # All this is so that the example files work
+        http_host = "" 
+        path_info = request.url 
+        print("http_host: " + http_host)
+        print("path_info: " + path_info)
+        if(path_info ==  "http://127.0.0.1:5000/"):
+          print("LOCAL? YES")
+        else:
+          print("LOCAL? NO")
+          extended_path = "/home/CSVchecker/CSV-Checker-Web-Program/static/"
 
 
 
@@ -145,14 +158,14 @@ def root():
           # Input file
           
           # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
-          file = 'FINAL_working_example.csv'
+          file = extended_path + 'FINAL_working_example.csv'
           tempfile_path = 'FINAL_working_example.csv'
           
           #tempfile_path = tempfile.NamedTemporaryFile().name
           #file.save(tempfile_path)
 
           # Put input file in dataframe
-          df = pd.read_csv('FINAL_working_example.csv') #, na_filter=False) #, encoding='cp1252'
+          df = pd.read_csv(extended_path + 'FINAL_working_example.csv') #, na_filter=False) #, encoding='cp1252'
           df_no_Nan = pd.read_csv(tempfile_path, na_filter=False) #, encoding='cp1252'
 
           df2 = df.rename(str.lower, axis='columns')
@@ -178,11 +191,11 @@ def root():
           # Input file
           
           # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
-          file = 'FINAL_non_working_example.csv'
+          file = extended_path + 'FINAL_non_working_example.csv'
           tempfile_path = 'FINAL_non_working_example.csv'
 
           # Put input file in dataframe
-          df = pd.read_csv('FINAL_non_working_example.csv') #, na_filter=False) #, encoding='cp1252'
+          df = pd.read_csv(extended_path + 'FINAL_non_working_example.csv') #, na_filter=False) #, encoding='cp1252'
           df_no_Nan = pd.read_csv(tempfile_path, na_filter=False) #, encoding='cp1252'
 
           df2 = df.rename(str.lower, axis='columns')
@@ -874,7 +887,7 @@ def root():
 
 
         #now sending all data / results to home.html page:
-        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight, mydf=df2_no_Nan.to_html())
+        return render_template('home.html', results=results, fieldnames=fieldnames, len=len, df2=output, user_csv_b4=user_csv_userinput, mysize=size, highlight_array= highlight, mydf=df2_no_Nan.to_html(), path_info=path_info, http_host=http_host)
 
 
 """
