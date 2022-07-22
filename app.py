@@ -159,7 +159,7 @@ def root():
           
           # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
           file = extended_path + 'FINAL_working_example.csv'
-          tempfile_path = 'FINAL_working_example.csv'
+          tempfile_path = extended_path + 'FINAL_working_example.csv'
           
           #tempfile_path = tempfile.NamedTemporaryFile().name
           #file.save(tempfile_path)
@@ -192,7 +192,7 @@ def root():
           
           # <FileStorage: 'FINAL_non_working_example.csv' ('text/csv')>
           file = extended_path + 'FINAL_non_working_example.csv'
-          tempfile_path = 'FINAL_non_working_example.csv'
+          tempfile_path = extended_path + 'FINAL_non_working_example.csv'
 
           # Put input file in dataframe
           df = pd.read_csv(extended_path + 'FINAL_non_working_example.csv') #, na_filter=False) #, encoding='cp1252'
